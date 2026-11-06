@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explora La collection de La Fleur Dorée: piezas delicadas, materiales escogidos y belleza en cada detalle.">
+    <meta name="theme-color" content="#f8f5ef">
+    <title>La colección — La Fleur Dorée</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="min-h-screen bg-[var(--ivory)] text-[var(--ink)] antialiased">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <div class="announcement-bar text-center">
+      <p>Un pequeño gesto, una gran belleza <span aria-hidden="true">✦</span> Envío especial en tus primeros pedidos</p>
+    </div>
+
+    <header class="site-header">
+      <div class="header-main page-shell">
+        <a class="brand-mark" href="index.html" aria-label="La Fleur Dorée, inicio">
+          <span class="brand-name">La Fleur Dorée</span>
+          <span class="brand-subtitle">MAISON DE COUTURE · PARIS</span>
+        </a>
+        <form class="search-form" role="search" action="#catalogo">
+          <label class="sr-only" for="site-search">Buscar en la tienda</label>
+          <input id="site-search" name="q" type="search" placeholder="¿Qué estás buscando?">
+          <button type="submit" aria-label="Buscar">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.6"></circle><path d="m16 16 4.2 4.2"></path></svg>
+          </button>
+        </form>
+        <div class="header-actions">
+          <details class="account-menu">
+            <summary aria-label="Menú de cuenta de usuario">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"></circle><path d="M4.5 20c.5-4 3.4-6 7.5-6s7 2 7.5 6"></path></svg>
+              <span>Mi cuenta</span>
+            </summary>
+            <div class="account-popover">
+              <a href="#contacto">Ayuda y pedidos</a>
+              <a href="index.html#maison">Conoce la Maison</a>
+              <a href="#ayuda">Servicio y ayuda</a>
+            </div>
+          </details>
+          <a class="bag-link" href="#catalogo" aria-label="Bolsa de compra, 0 artículos">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg>
+            <span class="bag-count">0</span>
+          </a>
+        </div>
+      </div>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <div class="page-shell nav-inner">
+          <a href="index.html#novedades">Novedades</a>
+          <a href="index.html#mas-vendidos">Más vendidos</a>
+          <a href="#filtro-categoria">Calzado</a>
+          <a href="#filtro-categoria">Camisas</a>
+          <a href="#filtro-categoria">Pantalones</a>
+          <a href="#filtro-categoria">Accesorios</a>
+          <a class="nav-editorial" href="index.html#maison">La Maison</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="contenido" class="page-shell">
+      <section class="product-section" id="catalogo" aria-labelledby="catalog-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">LA COLLECTION · PRINTEMPS / ÉTÉ</p><h1 id="catalog-title" class="m-0 text-[var(--chocolate)] font-[family-name:var(--serif)] text-4xl font-normal not-italic tracking-[-.035em] sm:text-5xl">La colección</h1></div>
+          <p class="m-0 text-xs text-[#62564e]">Piezas escogidas, para atesorar.</p>
+        </div>
+
+        <form class="mb-8 grid gap-6 border-y border-[var(--line)] bg-[var(--paper)] px-5 py-5 sm:grid-cols-2 sm:px-7" aria-label="Filtros de productos">
+          <fieldset id="filtro-categoria" class="m-0 min-w-0 border-0 p-0">
+            <legend class="mb-3 font-[var(--sans)] text-lg text-[var(--chocolate)]">Categoría</legend>
+            <div class="flex flex-wrap gap-x-5 gap-y-3 text-xs text-[#62564e]">
+              <label class="inline-flex items-center gap-2"><input class="accent-[#49352f]" type="checkbox" name="categoria" value="blusas"> Blusas</label>
+              <label class="inline-flex items-center gap-2"><input class="accent-[#49352f]" type="checkbox" name="categoria" value="camisas"> Camisas</label>
+              <label class="inline-flex items-center gap-2"><input class="accent-[#49352f]" type="checkbox" name="categoria" value="vestidos"> Vestidos</label>
+              <label class="inline-flex items-center gap-2"><input class="accent-[#49352f]" type="checkbox" name="categoria" value="faldas"> Faldas</label>
+              <label class="inline-flex items-center gap-2"><input class="accent-[#49352f]" type="checkbox" name="categoria" value="pantalones"> Pantalones</label>
+              <label class="inline-flex items-center gap-2"><input class="accent-[#49352f]" type="checkbox" name="categoria" value="calzado"> Calzado</label>
+              <label class="inline-flex items-center gap-2"><input class="accent-[#49352f]" type="checkbox" name="categoria" value="accesorios"> Accesorios</label>
+            </div>
+          </fieldset>
+          <fieldset class="m-0 min-w-0 border-0 p-0">
+            <legend class="mb-3 font-[var(--sans)] text-lg text-[var(--chocolate)]">Talla</legend>
+            <div class="flex flex-wrap gap-2 text-xs text-[#62564e]">
+              <label class="cursor-pointer"><input class="peer sr-only" type="checkbox" name="talla" value="34"><span class="inline-grid h-9 min-w-9 place-items-center border border-[var(--line)] px-2 peer-checked:border-[var(--chocolate)] peer-checked:bg-[var(--chocolate)] peer-checked:text-white peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2">34</span></label>
+              <label class="cursor-pointer"><input class="peer sr-only" type="checkbox" name="talla" value="36"><span class="inline-grid h-9 min-w-9 place-items-center border border-[var(--line)] px-2 peer-checked:border-[var(--chocolate)] peer-checked:bg-[var(--chocolate)] peer-checked:text-white peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2">36</span></label>
+              <label class="cursor-pointer"><input class="peer sr-only" type="checkbox" name="talla" value="38"><span class="inline-grid h-9 min-w-9 place-items-center border border-[var(--line)] px-2 peer-checked:border-[var(--chocolate)] peer-checked:bg-[var(--chocolate)] peer-checked:text-white peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2">38</span></label>
+              <label class="cursor-pointer"><input class="peer sr-only" type="checkbox" name="talla" value="40"><span class="inline-grid h-9 min-w-9 place-items-center border border-[var(--line)] px-2 peer-checked:border-[var(--chocolate)] peer-checked:bg-[var(--chocolate)] peer-checked:text-white peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2">40</span></label>
+              <label class="cursor-pointer"><input class="peer sr-only" type="checkbox" name="talla" value="42"><span class="inline-grid h-9 min-w-9 place-items-center border border-[var(--line)] px-2 peer-checked:border-[var(--chocolate)] peer-checked:bg-[var(--chocolate)] peer-checked:text-white peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2">42</span></label>
+              <label class="cursor-pointer"><input class="peer sr-only" type="checkbox" name="talla" value="unica"><span class="inline-grid h-9 min-w-9 place-items-center border border-[var(--line)] px-2 peer-checked:border-[var(--chocolate)] peer-checked:bg-[var(--chocolate)] peer-checked:text-white peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2">Única</span></label>
+            </div>
+          </fieldset>
+        </form>
+
+        <p class="mb-5 text-xs text-[#887b72]">20 piezas disponibles</p>
+        <div class="grid grid-cols-1 gap-x-5 gap-y-8 sm:grid-cols-2 lg:grid-cols-4" aria-label="Productos de La colección">
+          <article class="product-card">
+            <div class="product-image product-image-rose aspect-square"><img class="h-full w-full object-contain" src="assets/images/blouse-rosee.webp" srcset="assets/images/blouse-rosee-480.webp 480w, assets/images/blouse-rosee.webp 800w" sizes="(max-width: 639px) calc(100vw - 36px), (max-width: 1023px) calc((100vw - 68px) / 2), (max-width: 1416px) calc((100vw - 116px) / 4), 301px" width="800" height="800" alt="Blusa Rosée de algodón bordado en color marfil" loading="lazy"></div>
+            <div class="product-info"><div><h2 class="font-[family-name:var(--serif)] font-normal not-italic text-[var(--chocolate)]">Blusa Rosée</h2><p>Algodón bordado · Marfil</p></div><p class="price">€ 185</p></div>
+          </article>
+          <article class="product-card">
+            <div class="product-image product-image-lilac aspect-square"><img class="h-full w-full object-contain" src="assets/images/skirt-jardin.webp" srcset="assets/images/skirt-jardin-480.webp 480w, assets/images/skirt-jardin.webp 800w" sizes="(max-width: 639px) calc(100vw - 36px), (max-width: 1023px) calc((100vw - 68px) / 2), (max-width: 1416px) calc((100vw - 116px) / 4), 301px" width="800" height="800" alt="Falda Jardin Secret de lino fluido en rosa poudré" loading="lazy"></div>
+            <div class="product-info"><div><h2 class="font-[family-name:var(--serif)] font-normal not-italic text-[var(--chocolate)]">Falda Jardin Secret</h2><p>Lino fluido · Rosa poudré</p></div><p class="price">€ 240</p></div>
+          </article>
+          <article class="product-card">
+            <div class="product-image product-image-sand aspect-square"><img class="h-full w-full object-contain" src="assets/images/bag-petite.webp" srcset="assets/images/bag-petite-480.webp 480w, assets/images/bag-petite.webp 800w" sizes="(max-width: 639px) calc(100vw - 36px), (max-width: 1023px) calc((100vw - 68px) / 2), (max-width: 1416px) calc((100vw - 116px) / 4), 301px" width="800" height="800" alt="Bolso Petite Fleur de cuero suave en color miel" loading="lazy"></div>
+            <div class="product-info"><div><h2 class="font-[family-name:var(--serif)] font-normal not-italic text-[var(--chocolate)]">Bolso Petite Fleur</h2><p>Cuero suave · Miel</p></div><p class="price">€ 320</p></div>
+          </article>
+          <article class="product-card">
+            <div class="product-image product-image-blue aspect-square"><img class="h-full w-full object-contain" src="assets/images/dress-aube.webp" srcset="assets/images/dress-aube-480.webp 480w, assets/images/dress-aube.webp 800w" sizes="(max-width: 639px) calc(100vw - 36px), (max-width: 1023px) calc((100vw - 68px) / 2), (max-width: 1416px) calc((100vw - 116px) / 4), 301px" width="800" height="800" alt="Vestido L'Aube de popelina de algodón en azul cielo" loading="lazy"></div>
+            <div class="product-info"><div><h2 class="font-[family-name:var(--serif)] font-normal not-italic text-[var(--chocolate)]">Vestido L'Aube</h2><p>Popelina de algodón · Ciel</p></div><p class="price">€ 395</p></div>
+          </article>
+          <article class="product-card">
+            <div class="product-image product-image-green aspect-square"><img class="h-full w-full object-contain" src="assets/images/shoes-colette.webp" srcset="assets/images/shoes-colette-480.webp 480w, assets/images/shoes-colette.webp 800w" sizes="(max-width: 639px) calc(100vw - 36px), (max-width: 1023px) calc((100vw - 68px) / 2), (max-width: 1416px) calc((100vw - 116px) / 4), 301px" width="800" height="800" alt="Zapatos Colette de tacón en satén rosa empolvado, con tira al talón y detalle joya" loading="lazy"></div>
+            <div class="product-info"><div><h2 class="font-[family-name:var(--serif)] font-normal not-italic text-[var(--chocolate)]">Zapatos Colette</h2><p>Satén · Rosa empolvado</p></div><p class="price">€ 210</p></div>
+          </article>
+          <article class="product-card">
+            <div class="product-image product-image-peach aspect-square"><img class="h-full w-full object-contain" src="assets/images/blouse-amelie.webp" srcset="assets/images/blouse-amelie-480.webp 480w, assets/images/blouse-amelie.webp 800w" sizes="(max-width: 639px) calc(100vw - 36px), (max-width: 1023px) calc((100vw - 68px) / 2), (max-width: 1416px) calc((100vw - 116px) / 4), 301px" width="800" height="800" alt="Blusa Amélie de organza color champán, con lazo y mangas vaporosas" loading="lazy"></div>
+            <div class="product-info"><div><h2 class="font-[family-name:var(--serif)] font-normal not-italic text-[var(--chocolate)]">Blusa Amélie</h2><p>Organza · Champán</p></div><p class="price">€ 175</p></div>
+          </article>
+          <article class="product-card">
+            <div class="product-image product-image-mauve aspect-square"><img class="h-full w-full object-contain" src="assets/images/trousers-eloise.webp" srcset="assets/images/trousers-eloise-480.webp 480w, assets/images/trousers-eloise.webp 800w" sizes="(max-width: 639px) calc(100vw - 36px), (max-width: 1023px) calc((100vw - 68px) / 2), (max-width: 1416px) calc((100vw - 116px) / 4), 301px" width="800" height="800" alt="Pantalón Éloise de sarga de lino en color chocolate" loading="lazy"></div>
+            <div class="product-info"><div><h2 class="font-[family-name:var(--serif)] font-normal not-italic text-[var(--chocolate)]">Pantalón Éloise</h2><p>Sarga de lino · Chocolat</p></div><p class="price">€ 265</p></div>
+          </article>
+          <article class="product-card">
+            <div class="product-image product-image-cream aspect-square"><img class="h-full w-full object-contain" src="assets/images/necklace-lumiere.webp" srcset="assets/images/necklace-lumiere-480.webp 480w, assets/images/necklace-lumiere.webp 800w" sizes="(max-width: 639px) calc(100vw - 36px), (max-width: 1023px) calc((100vw - 68px) / 2), (max-width: 1416px) calc((100vw - 116px) / 4), 301px" width="800" height="800" alt="Collar Lumière de latón dorado" loading="lazy"></div>
+            <div class="product-info"><div><h2 class="font-[family-name:var(--serif)] font-normal not-italic text-[var(--chocolate)]">Collar Lumière</h2><p>Latón dorado · Or</p></div><p class="price">€ 145</p></div>
+          </article>
+          <article class="product-card">
+            <div class="product-image product-image-blue aspect-square"><img class="h-full w-full object-contain" src="assets/images/sandals-celeste.webp" srcset="assets/images/sandals-celeste-480.webp 480w, assets/images/sandals-celeste.webp 800w" sizes="(max-width: 639px) calc(100vw - 36px), (max-width: 1023px) calc((100vw - 68px) / 2), (max-width: 1416px) calc((100vw - 116px) / 4), 301px" width="800" height="800" alt="Sandalias Céleste de tiras delicadas en azul cielo" loading="lazy"></div>
+            <div class="product-info"><div><h2 class="font-[family-name:var(--serif)] font-normal not-italic text-[var(--chocolate)]">Sandalias Céleste</h2><p>Satén · Champán</p></div><p class="price">€ 225</p></div>
+          </article>
+          <article class="product-card">
+            <div class="product-image product-image-peach aspect-square"><img class="h-full w-full object-contain" src="assets/images/pumps-margot.webp" srcset="assets/images/pumps-margot-480.webp 480w, assets/images/pumps-margot.webp 800w" sizes="(max-width: 639px) calc(100vw - 36px), (max-width: 1023px) calc((100vw - 68px) / 2), (max-width: 1416px) calc((100vw - 116px) / 4), 301px" width="800" height="800" alt="Zapatos de salón Margot de silueta elegante" loading="lazy"></div>
+            <div class="product-info"><div><h2 class="font-[family-name:var(--serif)] font-normal not-italic text-[var(--chocolate)]">Salones Margot</h2><p>Satén con perlas · Marfil</p></div><p class="price">€ 285</p></div>
+          </article>
+          <article class="product-card">
+            <div class="product-image product-image-rose aspect-square"><img class="h-full w-full object-contain" src="assets/images/flats-anais.webp" srcset="assets/images/flats-anais-480.webp 480w, assets/images/flats-anais.webp 800w" sizes="(max-width: 639px) calc(100vw - 36px), (max-width: 1023px) calc((100vw - 68px) / 2), (max-width: 1416px) calc((100vw - 116px) / 4), 301px" width="800" height="800" alt="Bailarinas Anaïs de líneas delicadas" loading="lazy"></div>
+            <div class="product-info"><div><h2 class="font-[family-name:var(--serif)] font-normal not-italic text-[var(--chocolate)]">Bailarinas Anaïs</h2><p>Satén con hebilla joya · Rosa empolvado</p></div><p class="price">€ 195</p></div>
+          </article>
+          <article class="product-card">
+            <div class="product-image product-image-cream aspect-square"><img class="h-full w-full object-contain" src="assets/images/blouse-dentelle.webp" srcset="assets/images/blouse-dentelle-480.webp 480w, assets/images/blouse-dentelle.webp 800w" sizes="(max-width: 639px) calc(100vw - 36px), (max-width: 1023px) calc((100vw - 68px) / 2), (max-width: 1416px) calc((100vw - 116px) / 4), 301px" width="800" height="800" alt="Blusa Dentelle en encaje delicado de tono marfil" loading="lazy"></div>
+            <div class="product-info"><div><h2 class="font-[family-name:var(--serif)] font-normal not-italic text-[var(--chocolate)]">Blusa Dentelle</h2><p>Encaje floral · Marfil</p></div><p class="price">€ 220</p></div>
+          </article>
+          <article class="product-card">
+            <div class="product-image product-image-green aspect-square"><img class="h-full w-full object-contain" src="assets/images/blouse-sauge.webp" srcset="assets/images/blouse-sauge-480.webp 480w, assets/images/blouse-sauge.webp 800w" sizes="(max-width: 639px) calc(100vw - 36px), (max-width: 1023px) calc((100vw - 68px) / 2), (max-width: 1416px) calc((100vw - 116px) / 4), 301px" width="800" height="800" alt="Blusa Sauge en tejido ligero color verde salvia" loading="lazy"></div>
+            <div class="product-info"><div><h2 class="font-[family-name:var(--serif)] font-normal not-italic text-[var(--chocolate)]">Blusa Sauge</h2><p>Seda · Verde salvia</p></div><p class="price">€ 190</p></div>
+          </article>
+          <article class="product-card">
+            <div class="product-image product-image-blue aspect-square"><img class="h-full w-full object-contain" src="assets/images/blouse-bleuet.webp" srcset="assets/images/blouse-bleuet-480.webp 480w, assets/images/blouse-bleuet.webp 800w" sizes="(max-width: 639px) calc(100vw - 36px), (max-width: 1023px) calc((100vw - 68px) / 2), (max-width: 1416px) calc((100vw - 116px) / 4), 301px" width="800" height="800" alt="Blusa Bleuet en azul aciano de silueta delicada" loading="lazy"></div>
+            <div class="product-info"><div><h2 class="font-[family-name:var(--serif)] font-normal not-italic text-[var(--chocolate)]">Blusa Bleuet</h2><p>Satén · Azul empolvado</p></div><p class="price">€ 185</p></div>
+          </article>
+          <article class="product-card">
+            <div class="product-image product-image-cream aspect-square"><img class="h-full w-full object-contain" src="assets/images/trousers-ivoire.webp" srcset="assets/images/trousers-ivoire-480.webp 480w, assets/images/trousers-ivoire.webp 800w" sizes="(max-width: 639px) calc(100vw - 36px), (max-width: 1023px) calc((100vw - 68px) / 2), (max-width: 1416px) calc((100vw - 116px) / 4), 301px" width="800" height="800" alt="Pantalón Ivoire de corte fluido en color marfil" loading="lazy"></div>
+            <div class="product-info"><div><h2 class="font-[family-name:var(--serif)] font-normal not-italic text-[var(--chocolate)]">Pantalón Ivoire</h2><p>Crepé · Marfil</p></div><p class="price">€ 275</p></div>
+          </article>
+          <article class="product-card">
+            <div class="product-image product-image-sand aspect-square"><img class="h-full w-full object-contain" src="assets/images/trousers-sable.webp" srcset="assets/images/trousers-sable-480.webp 480w, assets/images/trousers-sable.webp 800w" sizes="(max-width: 639px) calc(100vw - 36px), (max-width: 1023px) calc((100vw - 68px) / 2), (max-width: 1416px) calc((100vw - 116px) / 4), 301px" width="800" height="800" alt="Pantalón Sable de corte recto en tono arena" loading="lazy"></div>
+            <div class="product-info"><div><h2 class="font-[family-name:var(--serif)] font-normal not-italic text-[var(--chocolate)]">Pantalón Sable</h2><p>Seda fluida · Arena</p></div><p class="price">€ 260</p></div>
+          </article>
+          <article class="product-card">
+            <div class="product-image product-image-cream aspect-square"><img class="h-full w-full object-contain" src="assets/images/earrings-perle.webp" srcset="assets/images/earrings-perle-480.webp 480w, assets/images/earrings-perle.webp 800w" sizes="(max-width: 639px) calc(100vw - 36px), (max-width: 1023px) calc((100vw - 68px) / 2), (max-width: 1416px) calc((100vw - 116px) / 4), 301px" width="800" height="800" alt="Pendientes Perle con detalle de perla" loading="lazy"></div>
+            <div class="product-info"><div><h2 class="font-[family-name:var(--serif)] font-normal not-italic text-[var(--chocolate)]">Pendientes Perle</h2><p>Diseño floral dorado con colgante perlado.</p></div><p class="price">€ 125</p></div>
+          </article>
+          <article class="product-card">
+            <div class="product-image product-image-rose aspect-square"><img class="h-full w-full object-contain" src="assets/images/bracelet-flore.webp" srcset="assets/images/bracelet-flore-480.webp 480w, assets/images/bracelet-flore.webp 800w" sizes="(max-width: 639px) calc(100vw - 36px), (max-width: 1023px) calc((100vw - 68px) / 2), (max-width: 1416px) calc((100vw - 116px) / 4), 301px" width="800" height="800" alt="Pulsera Floré de inspiración floral" loading="lazy"></div>
+            <div class="product-info"><div><h2 class="font-[family-name:var(--serif)] font-normal not-italic text-[var(--chocolate)]">Pulsera Floré</h2><p>Diseño de hojas y flores en tono dorado.</p></div><p class="price">€ 135</p></div>
+          </article>
+          <article class="product-card">
+            <div class="product-image product-image-green aspect-square"><img class="h-full w-full object-contain" src="assets/images/scarf-jardin.webp" srcset="assets/images/scarf-jardin-480.webp 480w, assets/images/scarf-jardin.webp 800w" sizes="(max-width: 639px) calc(100vw - 36px), (max-width: 1023px) calc((100vw - 68px) / 2), (max-width: 1416px) calc((100vw - 116px) / 4), 301px" width="800" height="800" alt="Pañuelo Jardin de estampado floral inspirado en un jardín" loading="lazy"></div>
+            <div class="product-info"><div><h2 class="font-[family-name:var(--serif)] font-normal not-italic text-[var(--chocolate)]">Pañuelo Jardin</h2><p>Estampado floral · Marfil, rosa y salvia.</p></div><p class="price">€ 155</p></div>
+          </article>
+          <article class="product-card">
+            <div class="product-image product-image-mauve aspect-square"><img class="h-full w-full object-contain" src="assets/images/clutch-soiree.webp" srcset="assets/images/clutch-soiree-480.webp 480w, assets/images/clutch-soiree.webp 800w" sizes="(max-width: 639px) calc(100vw - 36px), (max-width: 1023px) calc((100vw - 68px) / 2), (max-width: 1416px) calc((100vw - 116px) / 4), 301px" width="800" height="800" alt="Clutch Soirée de formato compacto para ocasiones especiales" loading="lazy"></div>
+            <div class="product-info"><div><h2 class="font-[family-name:var(--serif)] font-normal not-italic text-[var(--chocolate)]">Clutch Soirée</h2><p>Bordado floral · Champán y dorado.</p></div><p class="price">€ 240</p></div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="ayuda">
+      <div class="footer-main page-shell">
+        <div class="footer-brand"><a class="brand-name" href="index.html">La Fleur Dorée</a><p>La beauté est dans le détail.</p><p class="footer-paris">MAISON DE COUTURE · PARIS</p></div>
+        <nav class="footer-column" aria-label="Categorías de productos"><h2>La collection</h2><a href="#filtro-categoria">Calzado</a><a href="#filtro-categoria">Camisas</a><a href="#filtro-categoria">Pantalones</a><a href="#filtro-categoria">Accesorios</a></nav>
+        <nav class="footer-column" aria-label="Información de la marca"><h2>La Maison</h2><a href="index.html#maison">Nuestra historia</a><a href="index.html#maison">El atelier</a><a href="index.html#maison">Nuestro savoir-faire</a><a href="index.html#maison">Journal</a></nav>
+        <nav class="footer-column" aria-label="Ayuda e información legal"><h2>Servicio &amp; ayuda</h2><a href="#contacto">Contacto</a><a href="#contacto">Envíos y devoluciones</a><a href="#contacto">Preguntas frecuentes</a><a href="#legal">Política de privacidad</a><a href="#legal">Términos y condiciones</a></nav>
+        <div class="footer-contact" id="contacto"><h2>Una nota, de vez en cuando</h2><p>Historias, inspiración y novedades de la Maison.</p><form id="newsletter" action="#newsletter"><label class="sr-only" for="newsletter-email">Tu correo electrónico</label><input id="newsletter-email" type="email" placeholder="Tu correo electrónico"><button type="submit" aria-label="Suscribirse">→</button></form><a class="contact-email" href="mailto:bonjour@lafleurdoree.example">bonjour@lafleurdoree.example</a></div>
+      </div>
+      <div class="footer-bottom page-shell" id="legal"><p>© 2025 La Fleur Dorée. Una maison ficticia, creada con amor.</p><p>PARIS <span aria-hidden="true">✦</span> AVEC AMOUR</p></div>
+    </footer>
+  </body>
+</html>
