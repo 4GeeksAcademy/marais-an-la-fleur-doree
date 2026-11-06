@@ -1,41 +1,56 @@
-# HTML Hello
+# La Fleur Dorée
 
-The most basic boilerplate for any 4Geeks Academy student, start your very first website from scratch.
+La Fleur Dorée es un proyecto educativo que presenta la web de una marca ficticia de moda. El sitio es un prototipo estático pensado para mostrar el diseño y el recorrido de compra, no una tienda funcional.
 
-> There is a video tutorial on [how to use this template to create your very first website here](https://youtu.be/dfbDCMu_p-0).
+**Web publicada:** [https://4geeksacademy.github.io/marais-an-la-fleur-doree/](https://4geeksacademy.github.io/marais-an-la-fleur-doree/)
 
-## What to do next?
+## Vistas
 
-Create an `index.html` file with the [basic HTML structure](http://4geeks.com/lesson/what-is-html-learn-html#page-structure) and see it live by running a web-server using the following command:
+- [Inicio](index.html) — portada y productos destacados.
+- [Catálogo](catalog.html) — catálogo de veinte productos.
+- [Producto](product.html) — ficha de ejemplo de la **Blusa Amélie**.
+- [Carrito](cart.html) — vista estática del carrito de ejemplo.
+- [Checkout](checkout.html) — formulario y resumen de compra estáticos.
+
+## Tecnologías
+
+- HTML semántico.
+- Tailwind CSS mediante CDN.
+- CSS para estilos y ajustes visuales.
+
+## Alcance y limitaciones
+
+El proyecto incluye un catálogo de veinte productos, una ficha de ejemplo de la Blusa Amélie, un carrito y una vista de checkout, todos estáticos. Los filtros y los botones de compra no ejecutan operaciones: no se procesan pagos ni se guarda el carrito de forma persistente. Los productos y sus precios son ficticios.
+
+Las imágenes se generaron con inteligencia artificial y se optimizaron en formato WebP, con variantes responsive para distintos tamaños de pantalla.
+
+## Ejecutar en Codespaces
+
+En la terminal de Codespaces, inicia el servidor con:
 
 ```bash
-$ pip3 install flask && python3 server.py
+python3 server.py
 ```
 
-- You can create as many HTML files as you want.
-- You can also create CSS files and import them into your website using a `<link>` tag placed between the `<head></head>` tags, like this:
+El servidor utiliza el puerto **3000**. Cuando Codespaces lo solicite, abre o reenvía ese puerto para ver el sitio.
 
-```html
-<head>
-  ...
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  ...
-</head>
-```
+## PageSpeed móvil
 
-- If you want to use Tailwind CSS, add it optionally via the official Tailwind CSS v4 CDN inside the same `<head>`:
+En una ejecución de PageSpeed para la **Home** se observaron estos resultados:
 
-```html
-<head>
-  ...
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  ...
-</head>
-```
+- Rendimiento: **90**
+- Accesibilidad: **100**
+- Buenas prácticas: **100**
+- SEO: **100**
 
-### Contributors
+![Resultado de PageSpeed móvil](pagespeed-result.png)
 
-This template was built as part of the [Full Stack Developer course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer) at [4Geeks Academy Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and [many other contributors](https://github.com/4GeeksAcademy/html-hello/graphs/contributors).
+Estas puntuaciones corresponden a una ejecución de la Home; pueden variar entre ejecuciones y no se atribuyen a las demás vistas.
 
-You can find other templates and resources like this at the [school's GitHub page](https://github.com/4geeksacademy/).
+## Estado del proyecto
+
+La versión completa está en la rama `feature/integration` y queda pendiente de revisión antes de fusionarse con `main`.
+
+## Atribución
+
+Este proyecto parte de la plantilla educativa HTML de [4Geeks Academy](https://github.com/4GeeksAcademy/html-hello/), creada como parte del [curso Full Stack Developer](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer). La plantilla original fue realizada por [Alejandro Sanchez](https://twitter.com/alesanchezr) y [otros contribuyentes](https://github.com/4GeeksAcademy/html-hello/graphs/contributors).
