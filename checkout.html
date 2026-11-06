@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Completa los pasos de compra de La Fleur Dorée. Prototipo visual sin procesamiento de pagos.">
+    <meta name="theme-color" content="#f8f5ef">
+    <title>Finalizar compra — La Fleur Dorée</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="checkout.css">
+  </head>
+  <body class="min-h-screen bg-[var(--ivory)] text-[var(--ink)] antialiased">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <div class="announcement-bar text-center">
+      <p>Un pequeño gesto, una gran belleza <span aria-hidden="true">✦</span> Envío especial en tus primeros pedidos</p>
+    </div>
+
+    <header class="site-header">
+      <div class="header-main page-shell">
+        <a class="brand-mark" href="index.html" aria-label="La Fleur Dorée, inicio">
+          <span class="brand-name">La Fleur Dorée</span>
+          <span class="brand-subtitle">MAISON DE COUTURE · PARIS</span>
+        </a>
+        <form class="search-form" role="search" action="index.html#colecciones">
+          <label class="sr-only" for="site-search">Buscar en la tienda</label>
+          <input id="site-search" name="q" type="search" placeholder="¿Qué estás buscando?">
+          <button type="submit" aria-label="Buscar">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.6"></circle><path d="m16 16 4.2 4.2"></path></svg>
+          </button>
+        </form>
+        <div class="header-actions">
+          <details class="account-menu">
+            <summary aria-label="Menú de cuenta de usuario">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"></circle><path d="M4.5 20c.5-4 3.4-6 7.5-6s7 2 7.5 6"></path></svg>
+              <span>Mi cuenta</span>
+            </summary>
+            <div class="account-popover">
+              <a href="index.html#contacto">Ayuda y pedidos</a>
+              <a href="index.html#maison">Conoce la Maison</a>
+              <a href="index.html#ayuda">Ayuda y pedidos</a>
+            </div>
+          </details>
+          <span class="bag-link" aria-label="Bolsa de compra, 4 artículos">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg>
+            <span class="bag-count">4</span>
+          </span>
+        </div>
+      </div>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <div class="page-shell nav-inner">
+          <a href="index.html#novedades">Novedades</a>
+          <a href="index.html#mas-vendidos">Más vendidos</a>
+          <a href="index.html#calzado">Calzado</a>
+          <a href="index.html#camisas">Camisas</a>
+          <a href="index.html#pantalones">Pantalones</a>
+          <a href="index.html#accesorios">Accesorios</a>
+          <a class="nav-editorial" href="index.html#maison">La Maison</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="contenido" class="checkout-main page-shell">
+      <div class="checkout-heading">
+        <p class="eyebrow">VOTRE COMMANDE</p>
+        <h1>Finalizar compra</h1>
+        <nav class="checkout-steps" aria-label="Pasos de compra">
+          <a href="#datos"><span>1</span> Datos personales</a>
+          <span class="step-divider" aria-hidden="true">—</span>
+          <a href="#envio"><span>2</span> Envío</a>
+          <span class="step-divider" aria-hidden="true">—</span>
+          <a href="#pago"><span>3</span> Pago</a>
+        </nav>
+      </div>
+
+      <div class="checkout-layout">
+        <div class="checkout-form" aria-label="Datos de compra de ejemplo">
+          <section class="checkout-section" id="datos" aria-labelledby="datos-title">
+            <div class="checkout-section-heading">
+              <span class="section-number" aria-hidden="true">01</span>
+              <div><p class="eyebrow">PREMIER PAS</p><h2 id="datos-title">Datos personales</h2></div>
+            </div>
+            <div class="field-grid">
+              <div class="checkout-field"><label for="nombre">Nombre</label><input id="nombre" name="nombre" type="text" autocomplete="off" placeholder="Nombre"></div>
+              <div class="checkout-field"><label for="apellidos">Apellidos</label><input id="apellidos" name="apellidos" type="text" autocomplete="off" placeholder="Apellidos"></div>
+              <div class="checkout-field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="off" placeholder="nombre@ejemplo.com"></div>
+              <div class="checkout-field"><label for="telefono">Teléfono</label><input id="telefono" name="telefono" type="tel" autocomplete="off" inputmode="tel" placeholder="+34 600 000 000"></div>
+            </div>
+          </section>
+
+          <section class="checkout-section" id="envio" aria-labelledby="envio-title">
+            <div class="checkout-section-heading">
+              <span class="section-number" aria-hidden="true">02</span>
+              <div><p class="eyebrow">DEUXIÈME PAS</p><h2 id="envio-title">Dirección de envío</h2></div>
+            </div>
+            <div class="field-grid">
+              <div class="checkout-field field-wide"><label for="direccion">Dirección</label><input id="direccion" name="direccion" type="text" autocomplete="off" placeholder="Calle y número"></div>
+              <div class="checkout-field"><label for="ciudad">Ciudad</label><input id="ciudad" name="ciudad" type="text" autocomplete="off" placeholder="Ciudad"></div>
+              <div class="checkout-field"><label for="codigo-postal">Código postal</label><input id="codigo-postal" name="codigo-postal" type="text" autocomplete="off" inputmode="numeric" placeholder="Código postal"></div>
+              <div class="checkout-field field-wide"><label for="pais">País</label><select id="pais" name="pais" autocomplete="off"><option value="" selected>Selecciona un país</option><option value="ejemplo">País de ejemplo</option></select></div>
+            </div>
+          </section>
+
+          <section class="checkout-section" id="pago" aria-labelledby="pago-title">
+            <div class="checkout-section-heading">
+              <span class="section-number" aria-hidden="true">03</span>
+              <div><p class="eyebrow">TROISIÈME PAS</p><h2 id="pago-title">Pago</h2></div>
+            </div>
+            <p class="prototype-notice">Prototipo de compra. No introduzcas datos reales de tarjeta.</p>
+            <div class="field-grid">
+              <div class="checkout-field field-wide"><label for="titular">Titular</label><input id="titular" name="titular" type="text" autocomplete="off" placeholder="Nombre del titular"></div>
+              <div class="checkout-field field-wide"><label for="tarjeta">Número de tarjeta</label><input id="tarjeta" name="tarjeta" type="text" inputmode="numeric" autocomplete="off" placeholder="0000 0000 0000 0000"></div>
+              <div class="checkout-field"><label for="caducidad">Caducidad</label><input id="caducidad" name="caducidad" type="text" inputmode="numeric" autocomplete="off" placeholder="MM/AA"></div>
+              <div class="checkout-field"><label for="seguridad">Código de seguridad</label><input id="seguridad" name="seguridad" type="password" inputmode="numeric" autocomplete="off" placeholder="CVC" maxlength="4"></div>
+            </div>
+          </section>
+        </div>
+
+        <aside class="order-summary" aria-labelledby="order-summary-title">
+          <h2 id="order-summary-title">Resumen del pedido</h2>
+          <ul class="order-items">
+            <li><div><h3>Blusa Amélie</h3><p>2 × 175,00&nbsp;€</p></div><strong>350,00&nbsp;€</strong></li>
+            <li><div><h3>Falda Jardin Secret</h3><p>1 × 240,00&nbsp;€</p></div><strong>240,00&nbsp;€</strong></li>
+            <li><div><h3>Bolso Petite Fleur</h3><p>1 × 320,00&nbsp;€</p></div><strong>320,00&nbsp;€</strong></li>
+          </ul>
+          <dl class="order-totals">
+            <div><dt>Subtotal sin impuestos</dt><dd>752,07&nbsp;€</dd></div>
+            <div><dt>Impuestos <span>(21 %)</span></dt><dd>157,93&nbsp;€</dd></div>
+            <div><dt>Envío</dt><dd class="free-shipping">Gratuito</dd></div>
+          </dl>
+          <div class="order-total"><span>Total <small>Impuestos incluidos</small></span><strong>910,00&nbsp;€</strong></div>
+          <button class="place-order-button" type="button">Finalizar compra <span aria-hidden="true">→</span></button>
+          <p class="summary-prototype-note">Pedido ficticio de demostración. No se procesará ningún pago.</p>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer" id="ayuda">
+      <div class="footer-main page-shell">
+        <div class="footer-brand"><a class="brand-name" href="index.html">La Fleur Dorée</a><p>La beauté est dans le détail.</p><p class="footer-paris">MAISON DE COUTURE · PARIS</p></div>
+        <nav class="footer-column" aria-label="Categorías de productos"><h2>La collection</h2><a href="index.html#calzado">Calzado</a><a href="index.html#camisas">Camisas</a><a href="index.html#pantalones">Pantalones</a><a href="index.html#accesorios">Accesorios</a></nav>
+        <nav class="footer-column" aria-label="Información de la marca"><h2>La Maison</h2><a href="index.html#la-maison">Nuestra historia</a><a href="index.html#maison">El atelier</a><a href="index.html#maison">Nuestro savoir-faire</a><a href="index.html#maison">Journal</a></nav>
+        <nav class="footer-column" aria-label="Ayuda e información legal"><h2>Servicio &amp; ayuda</h2><a href="index.html#contacto">Contacto</a><a href="index.html#contacto">Envíos y devoluciones</a><a href="index.html#contacto">Preguntas frecuentes</a><a href="index.html#legal">Política de privacidad</a><a href="index.html#legal">Términos y condiciones</a></nav>
+        <div class="footer-contact" id="contacto"><h2>Una nota, de vez en cuando</h2><p>Historias, inspiración y novedades de la Maison.</p><form action="index.html#newsletter"><label class="sr-only" for="newsletter-email">Tu correo electrónico</label><input id="newsletter-email" type="email" placeholder="Tu correo electrónico"><button type="submit" aria-label="Suscribirse">→</button></form><a class="contact-email" href="mailto:bonjour@lafleurdoree.example">bonjour@lafleurdoree.example</a></div>
+      </div>
+      <div class="footer-bottom page-shell" id="legal"><p>© 2025 La Fleur Dorée. Una maison ficticia, creada con amor.</p><p>PARIS <span aria-hidden="true">✦</span> AVEC AMOUR</p></div>
+    </footer>
+  </body>
+</html>
