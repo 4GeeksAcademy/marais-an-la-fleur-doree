@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Blusa Amélie de organza color champán, con lazo al cuello, mangas abullonadas y puños definidos. 175 €.">
+    <meta name="theme-color" content="#f8f5ef">
+    <title>Blusa Amélie — La Fleur Dorée</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="product.css">
+  </head>
+  <body class="min-h-screen bg-[var(--ivory)] text-[var(--ink)] antialiased">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <div class="announcement-bar text-center">
+      <p>Un pequeño gesto, una gran belleza <span aria-hidden="true">✦</span> Envío especial en tus primeros pedidos</p>
+    </div>
+
+    <header class="site-header">
+      <div class="header-main page-shell">
+        <a class="brand-mark" href="index.html" aria-label="La Fleur Dorée, inicio">
+          <span class="brand-name">La Fleur Dorée</span>
+          <span class="brand-subtitle">MAISON DE COUTURE · PARIS</span>
+        </a>
+        <form class="search-form" role="search" action="index.html#colecciones">
+          <label class="sr-only" for="site-search">Buscar en la tienda</label>
+          <input id="site-search" name="q" type="search" placeholder="¿Qué estás buscando?">
+          <button type="submit" aria-label="Buscar">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.6"></circle><path d="m16 16 4.2 4.2"></path></svg>
+          </button>
+        </form>
+        <div class="header-actions">
+          <details class="account-menu">
+            <summary aria-label="Menú de cuenta de usuario">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"></circle><path d="M4.5 20c.5-4 3.4-6 7.5-6s7 2 7.5 6"></path></svg>
+              <span>Mi cuenta</span>
+            </summary>
+            <div class="account-popover">
+              <a href="index.html#contacto">Ayuda y pedidos</a>
+              <a href="index.html#maison">Conoce la Maison</a>
+              <a href="index.html#ayuda">Ayuda y pedidos</a>
+            </div>
+          </details>
+          <a class="bag-link" href="index.html#colecciones" aria-label="Bolsa de compra, 0 artículos">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg>
+            <span class="bag-count">0</span>
+          </a>
+        </div>
+      </div>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <div class="page-shell nav-inner">
+          <a href="index.html#novedades">Novedades</a>
+          <a href="index.html#mas-vendidos">Más vendidos</a>
+          <a href="index.html#calzado">Calzado</a>
+          <a href="index.html#camisas">Camisas</a>
+          <a href="index.html#pantalones">Pantalones</a>
+          <a href="index.html#accesorios">Accesorios</a>
+          <a class="nav-editorial" href="index.html#maison">La Maison</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="contenido" class="product-detail page-shell">
+      <nav class="product-breadcrumb" aria-label="Ruta de navegación">
+        <a href="index.html">Inicio</a><span aria-hidden="true">/</span><a href="index.html#mas-vendidos">Más vendidos</a><span aria-hidden="true">/</span><span aria-current="page">Blusa Amélie</span>
+      </nav>
+
+      <div class="product-layout">
+        <figure class="product-photo">
+          <img src="assets/images/blouse-amelie.webp" srcset="assets/images/blouse-amelie-480.webp 480w, assets/images/blouse-amelie.webp 800w" sizes="(max-width: 600px) calc(100vw - 36px), (max-width: 900px) calc((100vw - 80px) / 2), (max-width: 1416px) calc((100vw - 152px) / 2), 612px" width="800" height="800" alt="Blusa Amélie de organza champán, con lazo al cuello, mangas abullonadas y puños definidos" fetchpriority="high">
+          <figcaption class="product-photo-caption">La beauté est dans le détail.</figcaption>
+        </figure>
+
+        <section class="product-information" aria-labelledby="product-title">
+          <p class="eyebrow">LES FAVORIS DE LA MAISON</p>
+          <h1 id="product-title" class="font-[family-name:var(--serif)]">Blusa Amélie</h1>
+          <p class="product-price">175 <span aria-label="euros">€</span></p>
+          <p class="product-description">Blusa de organza color champán, con lazo al cuello, mangas abullonadas y puños definidos.</p>
+          <p class="product-reference">Referencia <span>LFD-BA-001</span></p>
+
+          <form class="product-options" aria-label="Opciones de la Blusa Amélie">
+            <div class="product-field">
+              <label for="product-size">Talla</label>
+              <select id="product-size" name="talla" required>
+                <option value="" selected disabled>Selecciona una talla</option>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+            </div>
+            <div class="product-field product-quantity">
+              <label for="product-quantity">Cantidad</label>
+              <input id="product-quantity" name="cantidad" type="number" min="1" value="1" inputmode="numeric">
+            </div>
+            <button class="button button-dark product-add-button" type="button">Añadir al carrito</button>
+          </form>
+
+          <div class="product-details" aria-label="Detalles del producto">
+            <section aria-labelledby="materials-title">
+              <h2 id="materials-title">Materiales</h2>
+              <p>Organza · Champán</p>
+            </section>
+            <section aria-labelledby="care-title">
+              <h2 id="care-title">Cuidados</h2>
+              <p>Limpieza profesional recomendada</p>
+            </section>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer" id="ayuda">
+      <div class="footer-main page-shell">
+        <div class="footer-brand"><a class="brand-name" href="index.html">La Fleur Dorée</a><p>La beauté est dans le détail.</p><p class="footer-paris">MAISON DE COUTURE · PARIS</p></div>
+        <nav class="footer-column" aria-label="Categorías de productos"><h2>La collection</h2><a href="index.html#calzado">Calzado</a><a href="index.html#camisas">Camisas</a><a href="index.html#pantalones">Pantalones</a><a href="index.html#accesorios">Accesorios</a></nav>
+        <nav class="footer-column" aria-label="Información de la marca"><h2>La Maison</h2><a href="index.html#la-maison">Nuestra historia</a><a href="index.html#maison">El atelier</a><a href="index.html#maison">Nuestro savoir-faire</a><a href="index.html#maison">Journal</a></nav>
+        <nav class="footer-column" aria-label="Ayuda e información legal"><h2>Servicio &amp; ayuda</h2><a href="index.html#contacto">Contacto</a><a href="index.html#contacto">Envíos y devoluciones</a><a href="index.html#contacto">Preguntas frecuentes</a><a href="index.html#legal">Política de privacidad</a><a href="index.html#legal">Términos y condiciones</a></nav>
+        <div class="footer-contact" id="contacto"><h2>Una nota, de vez en cuando</h2><p>Historias, inspiración y novedades de la Maison.</p><form action="index.html#newsletter"><label class="sr-only" for="newsletter-email">Tu correo electrónico</label><input id="newsletter-email" type="email" placeholder="Tu correo electrónico"><button type="submit" aria-label="Suscribirse">→</button></form><a class="contact-email" href="mailto:bonjour@lafleurdoree.example">bonjour@lafleurdoree.example</a></div>
+      </div>
+      <div class="footer-bottom page-shell" id="legal"><p>© 2025 La Fleur Dorée. Una maison ficticia, creada con amor.</p><p>PARIS <span aria-hidden="true">✦</span> AVEC AMOUR</p></div>
+    </footer>
+  </body>
+</html>
