@@ -30,7 +30,7 @@ button, a, summary { -webkit-tap-highlight-color: transparent; }
 .header-main { min-height: 90px; display: grid; grid-template-columns: 1fr minmax(240px, 370px) 1fr; align-items: center; gap: 24px; }
 .brand-mark { justify-self: start; text-align: center; line-height: 1; }
 .brand-name { display: block; color: var(--chocolate); font: 500 27px/1.1 var(--serif); letter-spacing: -.045em; }
-.brand-subtitle { display: block; margin-top: 8px; color: var(--gold); font-size: 8px; letter-spacing: .22em; }
+.brand-subtitle { display: block; margin-top: 8px; color: #8a7249; font-size: 8px; letter-spacing: .22em; }
 .search-form { display: flex; align-items: center; height: 38px; border-bottom: 1px solid #d7cfc4; }
 .search-form input, .footer-contact input { min-width: 0; width: 100%; border: 0; outline: 0; color: var(--ink); background: transparent; font-size: 12px; }
 .search-form input::placeholder, .footer-contact input::placeholder { color: #a69a91; }
@@ -53,9 +53,10 @@ button, a, summary { -webkit-tap-highlight-color: transparent; }
 .campaign { position: relative; display: grid; min-height: 525px; grid-template-columns: .8fr 1.2fr; align-items: center; gap: 5.5%; padding-block: 48px 64px; }
 .campaign-copy { position: relative; z-index: 2; padding-left: clamp(6px, 4vw, 56px); }
 .eyebrow { margin: 0 0 14px; color: var(--gold); font-size: 9px; font-weight: 600; letter-spacing: .22em; }
+.campaign-copy > .eyebrow { color: #846d46; }
 h1, h2, h3, p { margin-top: 0; }
 .campaign h1 { margin-bottom: 17px; color: var(--chocolate); font: 400 clamp(50px, 6.2vw, 79px)/.99 var(--serif); letter-spacing: -.05em; }
-.campaign h1 em { color: var(--rose); font-weight: 400; }
+.campaign h1 em { color: #bd7d7d; font-weight: 400; }
 .campaign-description { max-width: 330px; margin-bottom: 25px; color: #62564e; font-family: var(--sans); font-size: 14px; line-height: 1.7; }
 .button { display: inline-flex; min-height: 45px; align-items: center; justify-content: center; gap: 19px; padding: 0 19px; font-size: 12px; letter-spacing: .03em; transition: background .2s ease, transform .2s ease; }
 .button:hover { transform: translateY(-2px); }
@@ -108,7 +109,7 @@ h1, h2, h3, p { margin-top: 0; }
 .footer-main { display: grid; grid-template-columns: 1.3fr .8fr .9fr 1.15fr 1.3fr; gap: 30px; padding-block: 53px 43px; }
 .footer-brand .brand-name { font-size: 24px; }
 .footer-brand > p:not(.footer-paris) { margin: 12px 0 24px; color: #69584e; font: 13px var(--sans); }
-.footer-paris { color: var(--gold); font-size: 7px; letter-spacing: .16em; }
+.footer-paris { color: #7c6641; font-size: 7px; letter-spacing: .16em; }
 .footer-column, .footer-contact { display: flex; flex-direction: column; align-items: flex-start; gap: 9px; }
 .footer-column h2, .footer-contact h2 { margin: 0 0 7px; color: var(--chocolate); font: 500 16px var(--serif); }
 .footer-column a, .footer-column > span { color: #62564e; font-size: 11px; }
