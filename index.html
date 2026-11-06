@@ -53,9 +53,9 @@
               <a href="#ayuda">Ayuda y pedidos</a>
             </div>
           </details>
-          <a class="bag-link" href="#colecciones" aria-label="Bolsa de compra, 0 artículos">
+          <a class="bag-link" href="cart.html" aria-label="Bolsa de compra, 0 artículos">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg>
-            <span class="bag-count">0</span>
+            <span class="bag-count">4</span>
           </a>
         </div>
       </div>
@@ -63,10 +63,10 @@
         <div class="page-shell nav-inner">
           <a href="#novedades">Novedades</a>
           <a href="#mas-vendidos">Más vendidos</a>
-          <a href="#calzado">Calzado</a>
-          <a href="#camisas">Camisas</a>
-          <a href="#pantalones">Pantalones</a>
-          <a href="#accesorios">Accesorios</a>
+          <a href="catalog.html">Calzado</a>
+          <a href="catalog.html">Camisas</a>
+          <a href="catalog.html">Pantalones</a>
+          <a href="catalog.html">Accesorios</a>
           <a class="nav-editorial" href="#maison">La Maison</a>
         </div>
       </nav>
@@ -78,7 +78,7 @@
           <p class="eyebrow">COLECCIÓN · PRINTEMPS / ÉTÉ</p>
           <h1 id="campaign-title">La douceur<br>de <em>vivre.</em></h1>
           <p class="campaign-description">Un jardín secreto, una luz dorada, la libertad de vestir aquello que te hace florecer.</p>
-          <a class="button button-dark" href="#novedades">Descubrir la colección <span aria-hidden="true">↗</span></a>
+          <a class="button button-dark" href="catalog.html">Descubrir la colección <span aria-hidden="true">↗</span></a>
           <p class="campaign-note">L'élégance, sans effort.</p>
         </div>
         <div class="campaign-art">
@@ -89,7 +89,7 @@
       <section class="product-section page-shell" id="colecciones" aria-labelledby="new-title">
         <div class="section-heading" id="novedades">
           <div><p class="eyebrow">À DÉCOUVRIR</p><h2 id="new-title">Nuevos lanzamientos</h2></div>
-          <a class="text-link" href="#novedades">Ver todas las novedades <span aria-hidden="true">→</span></a>
+          <a class="text-link" href="catalog.html">Ver todas las novedades <span aria-hidden="true">→</span></a>
         </div>
         <div class="product-rail" aria-label="Selección de nuevos lanzamientos">
           <article class="product-card">
@@ -130,7 +130,7 @@
       <section class="product-section page-shell bestsellers" id="mas-vendidos" aria-labelledby="best-title">
         <div class="section-heading">
           <div><p class="eyebrow">LES FAVORIS DE LA MAISON</p><h2 id="best-title">Más vendidos</h2></div>
-          <a class="text-link" href="#mas-vendidos">Explorar los favoritos <span aria-hidden="true">→</span></a>
+          <a class="text-link" href="catalog.html">Explorar los favoritos <span aria-hidden="true">→</span></a>
         </div>
         <div class="product-rail" aria-label="Selección de productos más vendidos">
           <article class="product-card">
@@ -140,10 +140,12 @@
             <div class="product-info"><div><h3>Zapatos Colette</h3><p>Satén · Rosa empolvado</p></div><p class="price">€ 210</p></div>
           </article>
           <article class="product-card">
-            <div class="product-image product-image-peach">
-              <img src="assets/images/blouse-amelie.webp" srcset="assets/images/blouse-amelie-480.webp 480w, assets/images/blouse-amelie.webp 800w" sizes="(max-width: 360px) calc(100vw - 28px), (max-width: 600px) calc(100vw - 36px), (max-width: 788px) calc((100vw - 84px) / 3), (max-width: 900px) 235px, (max-width: 1416px) calc((100vw - 150px) / 4), 317px" width="800" height="800" alt="Blusa Amélie de organza color champán, con lazo y mangas vaporosas" loading="lazy">
-            </div>
-            <div class="product-info"><div><h3>Blusa Amélie</h3><p>Organza · Champán</p></div><p class="price">€ 175</p></div>
+            <a class="block" href="product.html">
+              <div class="product-image product-image-peach">
+                <img src="assets/images/blouse-amelie.webp" srcset="assets/images/blouse-amelie-480.webp 480w, assets/images/blouse-amelie.webp 800w" sizes="(max-width: 360px) calc(100vw - 28px), (max-width: 600px) calc(100vw - 36px), (max-width: 788px) calc((100vw - 84px) / 3), (max-width: 900px) 235px, (max-width: 1416px) calc((100vw - 150px) / 4), 317px" width="800" height="800" alt="Blusa Amélie de organza color champán, con lazo y mangas vaporosas" loading="lazy">
+              </div>
+              <div class="product-info"><div><h3>Blusa Amélie</h3><p>Organza · Champán</p></div><p class="price">€ 175</p></div>
+            </a>
           </article>
           <article class="product-card">
             <div class="product-image product-image-mauve">
@@ -166,16 +168,16 @@
         <div class="maison-art">
           <img src="assets/images/atelier.webp" srcset="assets/images/atelier-480.webp 480w, assets/images/atelier-768.webp 768w, assets/images/atelier.webp 1440w" sizes="(max-width: 360px) calc(100vw - 28px), (max-width: 600px) calc(100vw - 36px), (max-width: 900px) 45.5vw, (max-width: 1416px) calc(45.5vw - 43.68px), 601px" width="1440" height="960" alt="Atelier de La Fleur Dorée, dedicado a la confección artesanal" loading="lazy">
         </div>
-        <div class="maison-copy"><p class="eyebrow">DEPUIS PARIS, AVEC AMOUR</p><h2 id="maison-title">Vestir la vida<br>de belleza.</h2><p>La Fleur Dorée nace de una idea sencilla: que cada día merece un poco de poesía. Diseñamos piezas para atesorar, con siluetas delicadas, materiales escogidos y una feminidad que es solo tuya.</p><a class="text-link" href="#la-maison">Conoce nuestra historia <span aria-hidden="true">→</span></a></div>
+        <div class="maison-copy"><p class="eyebrow">DEPUIS PARIS, AVEC AMOUR</p><h2 id="maison-title">Vestir la vida<br>de belleza.</h2><p>La Fleur Dorée nace de una idea sencilla: que cada día merece un poco de poesía. Diseñamos piezas para atesorar, con siluetas delicadas, materiales escogidos y una feminidad que es solo tuya.</p><a class="text-link" href="#maison">Conoce nuestra historia <span aria-hidden="true">→</span></a></div>
       </section>
     </main>
 
     <footer class="site-footer" id="ayuda">
       <div class="footer-main page-shell">
         <div class="footer-brand"><a class="brand-name" href="index.html">La Fleur Dorée</a><p>La beauté est dans le détail.</p><p class="footer-paris">MAISON DE COUTURE · PARIS</p></div>
-        <nav class="footer-column" aria-label="Categorías de productos"><h2>La collection</h2><a id="calzado" href="#calzado">Calzado</a><a id="camisas" href="#camisas">Camisas</a><a id="pantalones" href="#pantalones">Pantalones</a><a id="accesorios" href="#accesorios">Accesorios</a></nav>
-        <nav class="footer-column" aria-label="Información de la marca"><h2>La Maison</h2><a id="la-maison" href="#maison">Nuestra historia</a><a href="#maison">El atelier</a><a href="#maison">Nuestro savoir-faire</a><a href="#maison">Journal</a></nav>
-        <nav class="footer-column" aria-label="Ayuda e información legal"><h2>Servicio &amp; ayuda</h2><a href="#contacto">Contacto</a><a href="#contacto">Envíos y devoluciones</a><a href="#contacto">Preguntas frecuentes</a><a href="#legal">Política de privacidad</a><a href="#legal">Términos y condiciones</a></nav>
+        <nav class="footer-column" aria-label="Categorías de productos"><h2>La collection</h2><a href="catalog.html">Calzado</a><a href="catalog.html">Camisas</a><a href="catalog.html">Pantalones</a><a href="catalog.html">Accesorios</a></nav>
+        <nav class="footer-column" aria-label="Información de la marca"><h2>La Maison</h2><a href="#maison">Nuestra historia</a><a href="#maison">El atelier</a><a href="#maison">Nuestro savoir-faire</a><span>Journal</span></nav>
+        <nav class="footer-column" aria-label="Ayuda e información legal"><h2>Servicio &amp; ayuda</h2><a href="#contacto">Contacto</a><span>Envíos y devoluciones</span><span>Preguntas frecuentes</span><span>Política de privacidad</span><span>Términos y condiciones</span></nav>
         <div class="footer-contact" id="contacto"><h2>Una nota, de vez en cuando</h2><p>Historias, inspiración y novedades de la Maison.</p><form action="#newsletter"><label class="sr-only" for="newsletter-email">Tu correo electrónico</label><input id="newsletter-email" type="email" placeholder="Tu correo electrónico"><button type="submit" aria-label="Suscribirse">→</button></form><a class="contact-email" href="mailto:bonjour@lafleurdoree.example">bonjour@lafleurdoree.example</a></div>
       </div>
       <div class="footer-bottom page-shell" id="legal"><p>© 2025 La Fleur Dorée. Una maison ficticia, creada con amor.</p><p>PARIS <span aria-hidden="true">✦</span> AVEC AMOUR</p></div>

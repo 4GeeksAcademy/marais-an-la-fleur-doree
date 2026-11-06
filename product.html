@@ -12,6 +12,20 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="product.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Blusa Amélie",
+        "description": "Blusa de organza color champán, con lazo al cuello, mangas abullonadas y puños definidos.",
+        "sku": "LFD-BA-001",
+        "brand": {
+          "@type": "Brand",
+          "name": "La Fleur Dorée"
+        },
+        "image": "assets/images/blouse-amelie.webp"
+      }
+    </script>
   </head>
   <body class="min-h-screen bg-[var(--ivory)] text-[var(--ink)] antialiased">
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -44,9 +58,9 @@
               <a href="index.html#ayuda">Ayuda y pedidos</a>
             </div>
           </details>
-          <a class="bag-link" href="index.html#colecciones" aria-label="Bolsa de compra, 0 artículos">
+          <a class="bag-link" href="cart.html" aria-label="Bolsa de compra, 0 artículos">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg>
-            <span class="bag-count">0</span>
+            <span class="bag-count">4</span>
           </a>
         </div>
       </div>
@@ -54,10 +68,10 @@
         <div class="page-shell nav-inner">
           <a href="index.html#novedades">Novedades</a>
           <a href="index.html#mas-vendidos">Más vendidos</a>
-          <a href="index.html#calzado">Calzado</a>
-          <a href="index.html#camisas">Camisas</a>
-          <a href="index.html#pantalones">Pantalones</a>
-          <a href="index.html#accesorios">Accesorios</a>
+          <a href="catalog.html">Calzado</a>
+          <a href="catalog.html">Camisas</a>
+          <a href="catalog.html">Pantalones</a>
+          <a href="catalog.html">Accesorios</a>
           <a class="nav-editorial" href="index.html#maison">La Maison</a>
         </div>
       </nav>
@@ -99,6 +113,8 @@
             </div>
             <button class="button button-dark product-add-button" type="button">Añadir al carrito</button>
           </form>
+          <p class="product-prototype-note">Prototipo visual: este botón no modifica el carrito.</p>
+          <a class="product-cart-link" href="cart.html">Ver carrito de ejemplo</a>
 
           <div class="product-details" aria-label="Detalles del producto">
             <section aria-labelledby="materials-title">
@@ -117,9 +133,9 @@
     <footer class="site-footer" id="ayuda">
       <div class="footer-main page-shell">
         <div class="footer-brand"><a class="brand-name" href="index.html">La Fleur Dorée</a><p>La beauté est dans le détail.</p><p class="footer-paris">MAISON DE COUTURE · PARIS</p></div>
-        <nav class="footer-column" aria-label="Categorías de productos"><h2>La collection</h2><a href="index.html#calzado">Calzado</a><a href="index.html#camisas">Camisas</a><a href="index.html#pantalones">Pantalones</a><a href="index.html#accesorios">Accesorios</a></nav>
-        <nav class="footer-column" aria-label="Información de la marca"><h2>La Maison</h2><a href="index.html#la-maison">Nuestra historia</a><a href="index.html#maison">El atelier</a><a href="index.html#maison">Nuestro savoir-faire</a><a href="index.html#maison">Journal</a></nav>
-        <nav class="footer-column" aria-label="Ayuda e información legal"><h2>Servicio &amp; ayuda</h2><a href="index.html#contacto">Contacto</a><a href="index.html#contacto">Envíos y devoluciones</a><a href="index.html#contacto">Preguntas frecuentes</a><a href="index.html#legal">Política de privacidad</a><a href="index.html#legal">Términos y condiciones</a></nav>
+        <nav class="footer-column" aria-label="Categorías de productos"><h2>La collection</h2><a href="catalog.html">Calzado</a><a href="catalog.html">Camisas</a><a href="catalog.html">Pantalones</a><a href="catalog.html">Accesorios</a></nav>
+        <nav class="footer-column" aria-label="Información de la marca"><h2>La Maison</h2><a href="index.html#maison">Nuestra historia</a><a href="index.html#maison">El atelier</a><a href="index.html#maison">Nuestro savoir-faire</a><span>Journal</span></nav>
+        <nav class="footer-column" aria-label="Ayuda e información legal"><h2>Servicio &amp; ayuda</h2><a href="index.html#contacto">Contacto</a><span>Envíos y devoluciones</span><span>Preguntas frecuentes</span><span>Política de privacidad</span><span>Términos y condiciones</span></nav>
         <div class="footer-contact" id="contacto"><h2>Una nota, de vez en cuando</h2><p>Historias, inspiración y novedades de la Maison.</p><form action="index.html#newsletter"><label class="sr-only" for="newsletter-email">Tu correo electrónico</label><input id="newsletter-email" type="email" placeholder="Tu correo electrónico"><button type="submit" aria-label="Suscribirse">→</button></form><a class="contact-email" href="mailto:bonjour@lafleurdoree.example">bonjour@lafleurdoree.example</a></div>
       </div>
       <div class="footer-bottom page-shell" id="legal"><p>© 2025 La Fleur Dorée. Una maison ficticia, creada con amor.</p><p>PARIS <span aria-hidden="true">✦</span> AVEC AMOUR</p></div>

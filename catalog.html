@@ -11,6 +11,36 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListOrder": "https://schema.org/ItemListOrderAscending",
+        "numberOfItems": 20,
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Blusa Rosée" },
+          { "@type": "ListItem", "position": 2, "name": "Falda Jardin Secret" },
+          { "@type": "ListItem", "position": 3, "name": "Bolso Petite Fleur" },
+          { "@type": "ListItem", "position": 4, "name": "Vestido L'Aube" },
+          { "@type": "ListItem", "position": 5, "name": "Zapatos Colette" },
+          { "@type": "ListItem", "position": 6, "name": "Blusa Amélie" },
+          { "@type": "ListItem", "position": 7, "name": "Pantalón Éloise" },
+          { "@type": "ListItem", "position": 8, "name": "Collar Lumière" },
+          { "@type": "ListItem", "position": 9, "name": "Sandalias Céleste" },
+          { "@type": "ListItem", "position": 10, "name": "Salones Margot" },
+          { "@type": "ListItem", "position": 11, "name": "Bailarinas Anaïs" },
+          { "@type": "ListItem", "position": 12, "name": "Blusa Dentelle" },
+          { "@type": "ListItem", "position": 13, "name": "Blusa Sauge" },
+          { "@type": "ListItem", "position": 14, "name": "Blusa Bleuet" },
+          { "@type": "ListItem", "position": 15, "name": "Pantalón Ivoire" },
+          { "@type": "ListItem", "position": 16, "name": "Pantalón Sable" },
+          { "@type": "ListItem", "position": 17, "name": "Pendientes Perle" },
+          { "@type": "ListItem", "position": 18, "name": "Pulsera Floré" },
+          { "@type": "ListItem", "position": 19, "name": "Pañuelo Jardin" },
+          { "@type": "ListItem", "position": 20, "name": "Clutch Soirée" }
+        ]
+      }
+    </script>
   </head>
   <body class="min-h-screen bg-[var(--ivory)] text-[var(--ink)] antialiased">
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -43,9 +73,9 @@
               <a href="#ayuda">Servicio y ayuda</a>
             </div>
           </details>
-          <a class="bag-link" href="#catalogo" aria-label="Bolsa de compra, 0 artículos">
+          <a class="bag-link" href="cart.html" aria-label="Bolsa de compra, 0 artículos">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg>
-            <span class="bag-count">0</span>
+            <span class="bag-count">4</span>
           </a>
         </div>
       </div>
@@ -53,10 +83,10 @@
         <div class="page-shell nav-inner">
           <a href="index.html#novedades">Novedades</a>
           <a href="index.html#mas-vendidos">Más vendidos</a>
-          <a href="#filtro-categoria">Calzado</a>
-          <a href="#filtro-categoria">Camisas</a>
-          <a href="#filtro-categoria">Pantalones</a>
-          <a href="#filtro-categoria">Accesorios</a>
+          <a href="catalog.html">Calzado</a>
+          <a href="catalog.html">Camisas</a>
+          <a href="catalog.html">Pantalones</a>
+          <a href="catalog.html">Accesorios</a>
           <a class="nav-editorial" href="index.html#maison">La Maison</a>
         </div>
       </nav>
@@ -118,8 +148,10 @@
             <div class="product-info"><div><h2 class="font-[family-name:var(--serif)] font-normal not-italic text-[var(--chocolate)]">Zapatos Colette</h2><p>Satén · Rosa empolvado</p></div><p class="price">€ 210</p></div>
           </article>
           <article class="product-card">
-            <div class="product-image product-image-peach aspect-square"><img class="h-full w-full object-contain" src="assets/images/blouse-amelie.webp" srcset="assets/images/blouse-amelie-480.webp 480w, assets/images/blouse-amelie.webp 800w" sizes="(max-width: 639px) calc(100vw - 36px), (max-width: 1023px) calc((100vw - 68px) / 2), (max-width: 1416px) calc((100vw - 116px) / 4), 301px" width="800" height="800" alt="Blusa Amélie de organza color champán, con lazo y mangas vaporosas" loading="lazy"></div>
-            <div class="product-info"><div><h2 class="font-[family-name:var(--serif)] font-normal not-italic text-[var(--chocolate)]">Blusa Amélie</h2><p>Organza · Champán</p></div><p class="price">€ 175</p></div>
+            <a class="block" href="product.html">
+              <div class="product-image product-image-peach aspect-square"><img class="h-full w-full object-contain" src="assets/images/blouse-amelie.webp" srcset="assets/images/blouse-amelie-480.webp 480w, assets/images/blouse-amelie.webp 800w" sizes="(max-width: 639px) calc(100vw - 36px), (max-width: 1023px) calc((100vw - 68px) / 2), (max-width: 1416px) calc((100vw - 116px) / 4), 301px" width="800" height="800" alt="Blusa Amélie de organza color champán, con lazo y mangas vaporosas" loading="lazy"></div>
+              <div class="product-info"><div><h2 class="font-[family-name:var(--serif)] font-normal not-italic text-[var(--chocolate)]">Blusa Amélie</h2><p>Organza · Champán</p></div><p class="price">€ 175</p></div>
+            </a>
           </article>
           <article class="product-card">
             <div class="product-image product-image-mauve aspect-square"><img class="h-full w-full object-contain" src="assets/images/trousers-eloise.webp" srcset="assets/images/trousers-eloise-480.webp 480w, assets/images/trousers-eloise.webp 800w" sizes="(max-width: 639px) calc(100vw - 36px), (max-width: 1023px) calc((100vw - 68px) / 2), (max-width: 1416px) calc((100vw - 116px) / 4), 301px" width="800" height="800" alt="Pantalón Éloise de sarga de lino en color chocolate" loading="lazy"></div>
@@ -184,9 +216,9 @@
     <footer class="site-footer" id="ayuda">
       <div class="footer-main page-shell">
         <div class="footer-brand"><a class="brand-name" href="index.html">La Fleur Dorée</a><p>La beauté est dans le détail.</p><p class="footer-paris">MAISON DE COUTURE · PARIS</p></div>
-        <nav class="footer-column" aria-label="Categorías de productos"><h2>La collection</h2><a href="#filtro-categoria">Calzado</a><a href="#filtro-categoria">Camisas</a><a href="#filtro-categoria">Pantalones</a><a href="#filtro-categoria">Accesorios</a></nav>
-        <nav class="footer-column" aria-label="Información de la marca"><h2>La Maison</h2><a href="index.html#maison">Nuestra historia</a><a href="index.html#maison">El atelier</a><a href="index.html#maison">Nuestro savoir-faire</a><a href="index.html#maison">Journal</a></nav>
-        <nav class="footer-column" aria-label="Ayuda e información legal"><h2>Servicio &amp; ayuda</h2><a href="#contacto">Contacto</a><a href="#contacto">Envíos y devoluciones</a><a href="#contacto">Preguntas frecuentes</a><a href="#legal">Política de privacidad</a><a href="#legal">Términos y condiciones</a></nav>
+        <nav class="footer-column" aria-label="Categorías de productos"><h2>La collection</h2><a href="catalog.html">Calzado</a><a href="catalog.html">Camisas</a><a href="catalog.html">Pantalones</a><a href="catalog.html">Accesorios</a></nav>
+        <nav class="footer-column" aria-label="Información de la marca"><h2>La Maison</h2><a href="index.html#maison">Nuestra historia</a><a href="index.html#maison">El atelier</a><a href="index.html#maison">Nuestro savoir-faire</a><span>Journal</span></nav>
+        <nav class="footer-column" aria-label="Ayuda e información legal"><h2>Servicio &amp; ayuda</h2><a href="#contacto">Contacto</a><span>Envíos y devoluciones</span><span>Preguntas frecuentes</span><span>Política de privacidad</span><span>Términos y condiciones</span></nav>
         <div class="footer-contact" id="contacto"><h2>Una nota, de vez en cuando</h2><p>Historias, inspiración y novedades de la Maison.</p><form id="newsletter" action="#newsletter"><label class="sr-only" for="newsletter-email">Tu correo electrónico</label><input id="newsletter-email" type="email" placeholder="Tu correo electrónico"><button type="submit" aria-label="Suscribirse">→</button></form><a class="contact-email" href="mailto:bonjour@lafleurdoree.example">bonjour@lafleurdoree.example</a></div>
       </div>
       <div class="footer-bottom page-shell" id="legal"><p>© 2025 La Fleur Dorée. Una maison ficticia, creada con amor.</p><p>PARIS <span aria-hidden="true">✦</span> AVEC AMOUR</p></div>

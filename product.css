@@ -22,6 +22,9 @@
 .product-field select:focus, .product-field input:focus { border-color: var(--gold); box-shadow: 0 0 0 2px #b3945e2e; }
 .product-quantity input { padding-inline: 10px; }
 .product-add-button { grid-column: 1 / -1; width: 100%; min-height: 49px; border: 0; cursor: pointer; font-size: 12px; }
+.product-prototype-note { margin: 9px 0 0; color: var(--muted); font-size: 10px; line-height: 1.5; }
+.product-cart-link { display: inline-block; margin-top: 7px; color: #67564c; font-size: 11px; text-decoration: underline; text-decoration-color: #c9b9ac; text-underline-offset: 3px; }
+.product-cart-link:hover { color: var(--rose); }
 .product-details { margin-top: 31px; border-top: 1px solid var(--line); }
 .product-details section { padding: 17px 0 15px; border-bottom: 1px solid var(--line); }
 .product-details h2 { margin: 0 0 4px; color: var(--chocolate); font: 500 16px/1.4 var(--serif); }
