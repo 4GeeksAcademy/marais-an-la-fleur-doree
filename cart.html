@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Revisa tu selección de La Fleur Dorée.">
+    <meta name="theme-color" content="#f8f5ef">
+    <title>Tu bolsa — La Fleur Dorée</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cart.css">
+  </head>
+  <body class="min-h-screen bg-[var(--ivory)] text-[var(--ink)] antialiased">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <div class="announcement-bar text-center">
+      <p>Un pequeño gesto, una gran belleza <span aria-hidden="true">✦</span> Envío especial en tus primeros pedidos</p>
+    </div>
+
+    <header class="site-header">
+      <div class="header-main page-shell">
+        <a class="brand-mark" href="index.html" aria-label="La Fleur Dorée, inicio">
+          <span class="brand-name">La Fleur Dorée</span>
+          <span class="brand-subtitle">MAISON DE COUTURE · PARIS</span>
+        </a>
+        <form class="search-form" role="search" action="index.html#colecciones">
+          <label class="sr-only" for="site-search">Buscar en la tienda</label>
+          <input id="site-search" name="q" type="search" placeholder="¿Qué estás buscando?">
+          <button type="submit" aria-label="Buscar">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.6"></circle><path d="m16 16 4.2 4.2"></path></svg>
+          </button>
+        </form>
+        <div class="header-actions">
+          <details class="account-menu">
+            <summary aria-label="Menú de cuenta de usuario">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"></circle><path d="M4.5 20c.5-4 3.4-6 7.5-6s7 2 7.5 6"></path></svg>
+              <span>Mi cuenta</span>
+            </summary>
+            <div class="account-popover">
+              <a href="index.html#contacto">Ayuda y pedidos</a>
+              <a href="index.html#maison">Conoce la Maison</a>
+              <a href="index.html#ayuda">Ayuda y pedidos</a>
+            </div>
+          </details>
+          <a class="bag-link" href="cart.html" aria-label="Bolsa de compra, 4 artículos" aria-current="page">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg>
+            <span class="bag-count">4</span>
+          </a>
+        </div>
+      </div>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <div class="page-shell nav-inner">
+          <a href="index.html#novedades">Novedades</a>
+          <a href="index.html#mas-vendidos">Más vendidos</a>
+          <a href="catalog.html">Calzado</a>
+          <a href="catalog.html">Camisas</a>
+          <a href="catalog.html">Pantalones</a>
+          <a href="catalog.html">Accesorios</a>
+          <a class="nav-editorial" href="index.html#maison">La Maison</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="contenido" class="cart-main page-shell">
+      <div class="cart-heading">
+        <p class="eyebrow">VOTRE SÉLECTION</p>
+        <h1>Tu bolsa</h1>
+        <p class="cart-intro">Tu selección, cuidada hasta el último detalle.</p>
+        <p class="cart-prototype-note">Carrito de ejemplo del prototipo.</p>
+      </div>
+
+      <div class="cart-layout">
+        <section class="cart-items" aria-labelledby="items-title">
+          <h2 id="items-title" class="sr-only">Productos en tu bolsa</h2>
+          <article class="cart-item">
+            <div class="cart-item-image">
+              <img src="assets/images/blouse-amelie.webp" srcset="assets/images/blouse-amelie-480.webp 480w, assets/images/blouse-amelie.webp 800w" sizes="(max-width: 600px) 96px, (max-width: 900px) 116px, 132px" width="800" height="800" alt="Blusa Amélie de organza color champán, con lazo y mangas vaporosas" loading="lazy">
+            </div>
+            <div class="cart-item-details">
+              <div class="cart-item-heading">
+                <div><h3>Blusa Amélie</h3><p class="cart-option">Organza · Champán</p></div>
+                <p class="cart-unit-price">175,00&nbsp;€ <span>por unidad</span></p>
+              </div>
+              <p class="cart-variant"><span>Talla</span> 38</p>
+              <div class="cart-item-bottom">
+                <div class="cart-quantity" aria-label="Cantidad: 2">Cantidad <span>2</span></div>
+                <p class="cart-line-total"><span>Importe</span> 350,00&nbsp;€</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="cart-item">
+            <div class="cart-item-image cart-image-lilac">
+              <img src="assets/images/skirt-jardin.webp" srcset="assets/images/skirt-jardin-480.webp 480w, assets/images/skirt-jardin.webp 800w" sizes="(max-width: 600px) 96px, (max-width: 900px) 116px, 132px" width="800" height="800" alt="Falda Jardin Secret de lino fluido en rosa poudré" loading="lazy">
+            </div>
+            <div class="cart-item-details">
+              <div class="cart-item-heading">
+                <div><h3>Falda Jardin Secret</h3><p class="cart-option">Lino fluido · Rosa poudré</p></div>
+                <p class="cart-unit-price">240,00&nbsp;€ <span>por unidad</span></p>
+              </div>
+              <p class="cart-variant"><span>Talla</span> 38</p>
+              <div class="cart-item-bottom">
+                <div class="cart-quantity" aria-label="Cantidad: 1">Cantidad <span>1</span></div>
+                <p class="cart-line-total"><span>Importe</span> 240,00&nbsp;€</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="cart-item">
+            <div class="cart-item-image cart-image-sand">
+              <img src="assets/images/bag-petite.webp" srcset="assets/images/bag-petite-480.webp 480w, assets/images/bag-petite.webp 800w" sizes="(max-width: 600px) 96px, (max-width: 900px) 116px, 132px" width="800" height="800" alt="Bolso Petite Fleur de cuero suave en color miel" loading="lazy">
+            </div>
+            <div class="cart-item-details">
+              <div class="cart-item-heading">
+                <div><h3>Bolso Petite Fleur</h3><p class="cart-option">Cuero suave</p></div>
+                <p class="cart-unit-price">320,00&nbsp;€ <span>por unidad</span></p>
+              </div>
+              <p class="cart-variant"><span>Color</span> Miel</p>
+              <div class="cart-item-bottom">
+                <div class="cart-quantity" aria-label="Cantidad: 1">Cantidad <span>1</span></div>
+                <p class="cart-line-total"><span>Importe</span> 320,00&nbsp;€</p>
+              </div>
+            </div>
+          </article>
+          <a class="cart-continue-shopping" href="catalog.html"><span aria-hidden="true">←</span> Seguir descubriendo</a>
+        </section>
+
+        <aside class="cart-summary" aria-labelledby="summary-title">
+          <h2 id="summary-title">Resumen del pedido</h2>
+          <dl class="summary-lines">
+            <div><dt>Subtotal sin impuestos</dt><dd>752,07&nbsp;€</dd></div>
+            <div><dt>Impuestos <span>(21 %)</span></dt><dd>157,93&nbsp;€</dd></div>
+          </dl>
+          <div class="summary-total"><span>Total <small>Impuestos incluidos</small></span><strong>910,00&nbsp;€</strong></div>
+          <a class="checkout-button" href="checkout.html">Continuar con la compra <span aria-hidden="true">→</span></a>
+          <p class="summary-note">Los precios mostrados ya incluyen impuestos. Envío calculado en el siguiente paso.</p>
+          <div class="secure-note"><span aria-hidden="true">✦</span> Una compra cuidada, de principio a fin</div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer" id="ayuda">
+      <div class="footer-main page-shell">
+        <div class="footer-brand"><a class="brand-name" href="index.html">La Fleur Dorée</a><p>La beauté est dans le détail.</p><p class="footer-paris">MAISON DE COUTURE · PARIS</p></div>
+        <nav class="footer-column" aria-label="Categorías de productos"><h2>La collection</h2><a href="catalog.html">Calzado</a><a href="catalog.html">Camisas</a><a href="catalog.html">Pantalones</a><a href="catalog.html">Accesorios</a></nav>
+        <nav class="footer-column" aria-label="Información de la marca"><h2>La Maison</h2><a href="index.html#maison">Nuestra historia</a><a href="index.html#maison">El atelier</a><a href="index.html#maison">Nuestro savoir-faire</a><span>Journal</span></nav>
+        <nav class="footer-column" aria-label="Ayuda e información legal"><h2>Servicio &amp; ayuda</h2><a href="index.html#contacto">Contacto</a><span>Envíos y devoluciones</span><span>Preguntas frecuentes</span><span>Política de privacidad</span><span>Términos y condiciones</span></nav>
+        <div class="footer-contact" id="contacto"><h2>Una nota, de vez en cuando</h2><p>Historias, inspiración y novedades de la Maison.</p><form action="index.html#newsletter"><label class="sr-only" for="newsletter-email">Tu correo electrónico</label><input id="newsletter-email" type="email" placeholder="Tu correo electrónico"><button type="submit" aria-label="Suscribirse">→</button></form><a class="contact-email" href="mailto:bonjour@lafleurdoree.example">bonjour@lafleurdoree.example</a></div>
+      </div>
+      <div class="footer-bottom page-shell" id="legal"><p>© 2025 La Fleur Dorée. Una maison ficticia, creada con amor.</p><p>PARIS <span aria-hidden="true">✦</span> AVEC AMOUR</p></div>
+    </footer>
+  </body>
+</html>
